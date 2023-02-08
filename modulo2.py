@@ -39,7 +39,7 @@ def criteriocandidato():  #Função que o usuário insere os critérios e em seg
     sver = int(input("Digite a nota para o conceito soft skills: \n" ))
     for cont in range(len(listaCandidatos)):
         if e[cont] >= ever and t[cont] >= tver and p[cont] >= pver and s[cont] >= sver:
-            print(listaCandidatos[cont],(f", e_{e[cont]}t_{t[cont]}p_{p[cont]}s_{s[cont]}"))
+            print(listaCandidatos[cont],(f", e{e[cont]}_t{t[cont]}_p{p[cont]}_s{s[cont]}"))
     return
 
 def menu(): #Função que serve como menu para o código.
@@ -55,7 +55,7 @@ def menu(): #Função que serve como menu para o código.
         try:
             opcao = int(input("\n Opção: "))
         except:
-            print("\n""Opcão inválida, tente novamente.")
+            print("\n Opcão inválida, tente novamente.")
             continue
         if (opcao == 1):
             dadosCandidato()
@@ -71,7 +71,6 @@ def menu(): #Função que serve como menu para o código.
 
 
 menu()
-
 
 
 
